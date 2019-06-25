@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title>test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+	  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+ 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  
+<script>
+    /* scroll nav bar*/
+   $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar-fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+    /* scroll nav bar*/
+    /* show and hide  div*/
+    $(document).ready(function() {
+        $(".menudiv").hide();
+        $(".itemdiv").hide();
+      $('#showmenu').click(function() {
+            $(".menudiv").animate({
+                width: "toggle"
+            });
+            $(".itemdiv").toggle();
+
+    });  
+
+
+});
+    /* show and hide  div*/
+  </script>
+   <style>
+      .clearfix:after {
+          content:"\0020";
+          display:block;
+          height:0;
+          clear:both;
+          visibility:hidden;
+          overflow:hidden;
+      }
+      .clearfix {
+          display:block;  
+          background-color: white
+      }
+      
+      .iconbb {
+        float: left; 
+        margin-right: 2px;
+        
+        width: 50%;
+      } 
+      .textbb {
+          margin: 5px;
+          padding-left: 52%;
+          width: auto;
+          color: gray;
+          text-indent: 0%;
+          font-size: 1vw;
+          position: absolute;
+      } 
+      #sliderstyle{color: gray;text-align: left; margin-top: 40px}
+       </style> 
+        
+
+</head>
+<body >
+    <!--start nav-->
+  <div class="mycontainer">
+    <nav class="navbar navbar-expand-lg  fixed-top navbar-dark  navbar-fixed-top" style="background-color:#0C191A" >
+
+        <a class="navbar-brand" href="#" >
+            <img src="images/1.png" class="p-8 img-responsive" id="logo" >
+            </a>
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto pr-4 nav-menu sf-js-enabled sf-arrows "  touch-action: pan-y;>
+                            <li class="nav-item ">
+                               <a href="#" style="text-decoration:none">
+                                    <div style="padding-top: 5px;margin-right: 8px">
+                                            <div style="float: right;">
+                                                    <span style="color:white">Business Owner?</span>
+                                                    <p style="color:#4CB4CE; font-size: 10px;">Sign Up as Business Owner</P>
+                                                        </div>
+                                                        <img src="images/office.png" class="pr-3 img-responsive rounded" style="float:  right" >
+                                                </div>
+
+
+                                </a>
+                            </li>
+                        <li class="nav-item ">
+                                    <div class="dropdown">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" style="background-color: transparent;color:white">
+                                                   <img src="images/english.png" class="pr-2 img-responsive">EN
+                                            </button>
+                                            <div class="dropdown-menu dropstyle">
+                                              <a class="dropdown-item " href="#">Link 1</a>
+                                              <a class="dropdown-item" href="#">Link 2</a>
+                                            </div>
+                                          </div>
+                            </li>
+                        <li class="nav-item ">
+                                    <div class="dropdown">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" style="background-color:transparent;color:white">
+                                                    $USD
+                                            </button>
+                                            <div class="dropdown-menu dropstyle">
+                                              <a class="dropdown-item" href="#">Link 1</a>
+                                              <a class="dropdown-item" href="#">Link 2</a>
+                                            </div>
+                                          </div>
+                            </li>
+
+                        <li class="nav-item ">
+                                <div class="dropdown">
+                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" style="background-color:transparent;color:white">
+                                                <i class="fas fa-user"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropstyle">
+                                          <a class="dropdown-item" href="#">Link 1</a>
+                                          <a class="dropdown-item" href="#">Link 2</a>
+                                        </div>
+                                      </div>
+                        </li>
+
+                      </ul>
+                </div>
+
+       </nav>
+     <!--end nav-->
+      <!--start header-->
+ <header id="header"  style="background-image: url('images/Cover.PNG') ">
+       <div class="container align-items-center">
+
+                <div class="mx-auto text-center head2">
+                    <h1 id="head3">PICK . BOOK . DIVE</h1>
+                    <p  id="head4">All destination in one application </p>
+                </div>
+                <div class="row ">
+                    <div class="mx-auto text-center col-lg-12 dd">
+
+                            <div class="form-group col-lg-5 col-12" style="float: right;width: 100%">
+                                    <div class="input-group " >
+
+                                          <select class="form-control ll" name="" style="color: gray;" >
+
+                                                    <option selected >When?</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                              </select>
+                                              <div class="input-group-prepend">
+                                                  <span class="input-group-text searchbtn" ><i class="fas fa-search" style="color:white;"></i></span>
+                                                </div>
+
+                                    </div>
+                                  </div>
+
+                                  <input type="text" class="form-control col-lg-4 col-10 pp" placeholder="All Destination" style="float:right;margin-right: -15px;">
+
+                               </div>
+                            </div>
+         </div>
+    </header>
+       <!--end header-->
+ <!-- start second part-->
+ <div class="container-fluid sec-part" >
+  <div class="container">
+     <div class="row">
+         <div  class="col-lg-1" >
+             </div>
+         <div class="col-lg-2 col-md-4 col-6" style="background-color:#E2E6E7;">
+                <div style="text-align: center;">
+                        <img src="images/4.png" style="margin-top:20px"><br>
+                            <div class="secpart">
+                            <p>NO HIDDEN<br>
+                       <span >FEES </span></p>
+                              </div>
+                </div>
+                              <!-- <div style="color:white;float: right;">
+                              <img src="images/Layer 9 copy.png "class="img-responsive" style="width:40px;height:40px;float:right">
+                              <div class="text-block">
+                                <i class="far fa-comment-dots" style="font-size:23px"></i>
+                                </div>
+                                </div> -->
+
+             </div>
+             <div class="col-lg-2 col-md-4 col-6" style="background-color:#E2E6E7;">
+                    <div style="text-align: center">
+                            <img src="images/6.png" style="margin-top:20px;"><br>
+                                <div class="secpart">
+                     <p>BEST PRICE<br>
+                     <span> GUARANTEE</span></p>
+
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" style="background-color:#E2E6E7">
+                        <div style="text-align: center;">
+                                <img src="images/5.png" style="margin-top:20px"><br>
+                                    <div class="secpart">
+                        <p>MOST TRUSTED<br>
+                         <span >SCUBA BRAND</span></p>
+
+                                      </div>
+                                </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6" style="background-color:#E2E6E7;">
+                            <div style="text-align: center;">
+                                    <img src="images/7.png" style="margin-top:20px;"><br>
+                                        <div class="secpart">
+                                   <p>EXPERT  24/7<br>
+                                    <span>ADVICE</span></p>
+
+                                          </div>
+                                    </div>
+                             </div>
+                    <div class="col-lg-3 col-md-8 col-12" style="background-color:#E2E6E7">
+                            <div style="text-align: center;">
+                                    <img src="images/Group 9.png" style="margin-top:20px;vertical-align: middle">
+                                    <br>
+                                    <div class="secpart">
+                                        <p >GREAT DEALS ON <br><span>PACKAGES</span></p></div>
+
+                                 </div>
+                        </div>
+
+
+
+         </div>
+         </div>
+     </div>
+
+  <!--end second part-->
+
+ <!--start third part-->
+ <div class="container align-items-center">
+             <div class="row">
+                 <div class="col-md-12 text-center" style="height: auto;">
+                    <h1 id="thirdpart">lovely destenations</h1>
+                    <img src="images/Shape 1.png"  class="img-responsive" style="margin-top:-30px">
+                    <p style="font-size: 1.5vw" id="thirdpart2">we have lovely destination to the hole world </p>
+
+                   </div>
+                </div>
+             </div>
+  <!--end third part-->
+
+  <!--start carousal part-->
+  
+  <div  class="container" style="margin-top: 60px">   
+    <div class="owl-one owl-carousel owl-theme">
+        <div class="item">
+            <img src="images/pp1.png" id="firstcaros1">
+            <img src="images/Union 1.png" id="firstcaros">
+            <h1 id="firstcaros2">s.africa</h1>  
+        </div>
+
+        <div class="item">
+          <img src="images/p3.png" id="firstcaros1">
+          <img src="images/Union 3.png" id="firstcaros">
+          <div id="firstcaros2"><h1>tanzania</h1></div>
+        </div>
+        <div class="item">
+            <img src="images/pp4.png" id="firstcaros1">
+            <img src="images/Union 1.png" id="firstcaros">
+            <div id="firstcaros2"><h1> &nbsp; &nbsp;egypt </h1></div>  
+             
+        </div>
+        <div class="item"><img src="images/pp3.png" id="firstcaros1">
+          <img src="images/Union 1.png" id="firstcaros">
+          <div id="firstcaros2"><h1>tunisia</h1></div>  
+
+        </div>
+        <div class="item"><img src="images/pp2.png" id="firstcaros1">
+          <img src="images/Union 1.png" id="firstcaros">
+          <div id="firstcaros2"><h1>tanzania</h1></div> 
+        </div>
+        <div class="item"><img src="images/pp4.png" id="firstcaros1">
+          <img src="images/Union 1.png" id="firstcaros">
+          <div id="firstcaros2"><h1>s.africa</h1></div> 
+        </div>
+       
+        
+       </div>
+   
+        </div>
+   
+
+  <!--end carousal part-->
+
+<section class="container text-center" style="margin-top:60px " >
+    <div class="row" >
+        <div class="col-12" style="height: auto">
+
+                <button type="button" class="btn btn-outline-info" style="border-bottom-right-radius: 30px;border-top-right-radius: 30px;border-bottom-left-radius: 30px;border-top-left-radius: 30px;color: black;padding: 6px">See All Destinations</button>
+        </div>
+        </div>
+    </section>
+<!--start seconed carousel part-->
+    <section class="container-fluid" style="background-image: url('images/divcver.PNG')"  class="col-12 img-responsive" id="carusel-aection">
+      <div class="cntainer text-center">
+        <div class="row">
+                    <div class="col-md-12 text-center" style="height: auto;">
+                        <div style="margin-top: 300px;color: white;margin-bottom: 20px">
+                            <h1  id="thirdpart">LATEST LIVEABOARD</h1>
+                            <img src="images/Shape 1.png"  class="img-responsive" style="margin-top:-30px">
+                            <p id="thirdpart2" >we have lovely destination to the hole world </p>
+                         </div>
+                           </div>
+
+                </div>
+
+                     <!-- <div style="width: 600px;height: 350px;border: 2px solide black;float:left;margin-left:15px " >
+                            <div style="width: 300px;height: 370px;float: left">
+                              <img src="images/p7.png" style="width:100% ;height:100%" class="img-responsive">
+                          </div>
+                              <div  style="background-color: white;width: 300px;height: 370px;float:left;font-size: 1vw" >
+                                      <h4><b>eroupen explorer<br>
+                                      eroupen explorer </b></h4>
+                                      <p style="color: gray;margin-top:40px">eroupen explorer eroupen explorer eroupen<br>
+                                      eroupen explorer eroupen explorer eroupen <br>
+                                      eroupen explorer eroupen explorer <br>
+                                      eroupen explorer eroupen explorer eroupen<br>
+                                      eroupen explorer eroupen explorer eroupen<br>
+                                      eroupen explorer eroupen explorer eroupen</p>
+                                      </div>
+                        </div> -->
+<div  class="container">   
+    <div class="owl-two owl-carousel owl-theme">
+      <div class="item">
+       
+            <div class="clearfix">
+              <div class="iconbb "> <img src="images/p7.png" class="img-responsive"></div>
+                    <div class="textbb ">
+                          <h4><b>eroupen explorer<br>
+                              eroupen explorer </b></h4>
+                              <p style="text-align: left; font-size: 13px; margin-top:20px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, to make  but also the leap into electronic typesetting, remaining </p>
+                              <table class="table table-sm table-borderless" style="margin-top: 15%;border: 0;">
+                           
+                                  <tr style="font-size: 13px;color: gray">
+                                      <th>Days</th>
+                                      <th>Booked Times</th>
+                                    </tr>
+                                  <tr style="font-size: 13px;">
+                                      <th>12</th>
+                                      <th>200</th>
+                                    </tr>
+                                    <tr style="font-size: 13px;color: gray">
+                                        <th>Was</th>
+                                        <th>Starts from</th>
+                                      </tr>
+                                      <tr style="font-size: 13px;">
+                                          <th ><del>1,020$</del></th>
+                                          <th style="color: #C2EAF4">920$</th>
+
+                              
+
+                           </table>
+                   
+                   
+                            </div>
+            </div>
+        
+      </div>
+
+      <div class="item">
+          <div class="clearfix">
+            <div class="iconbb"> <img src="images/p7.png" class="img-responsive"></div>
+                  <div class="textbb">
+                        <h4><b>eroupen explorer<br>
+                            eroupen explorer </b></h4>
+                        <p style="text-align: left; font-size: 13px; margin-top:20px">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, and scrambled it to make  but also the leap into electronic typesetting, remaining </p>
+                         <table class="table table-sm table-borderless" style="margin-top: 15%;border: 0;">
+                           
+                                  <tr style="font-size: 13px;color: gray">
+                                      <th>Days</th>
+                                      <th>Booked Times</th>
+                                    </tr>
+                                  <tr style="font-size: 13px;">
+                                      <th>12</th>
+                                      <th>200</th>
+                                    </tr>
+                                    <tr style="font-size: 13px;color: gray">
+                                        <th>Was</th>
+                                        <th>Starts from</th>
+                                      </tr>
+                                      <tr style="font-size: 13px;">
+                                          <th ><del>1,020$</del></th>
+                                          <th style="color: #C2EAF4">920$</th>
+
+                              
+
+                           </table>
+                          
+                          
+                        </div>
+          </div>
+      
+    </div>
+</div>
+</div>
+      <div class="row" >
+            <div class="col-12" style="height: auto;margin-top: 10px">
+
+                    <button type="button" class="btn btn-outline-info" style="border-bottom-right-radius: 30px;border-top-right-radius: 30px;border-bottom-left-radius: 30px;border-top-left-radius: 30px;color: white;padding: 6px;width:15%">View All </button>
+            </div>
+            </div>
+
+
+
+    </section>
+
+<!--end seconed carousel part-->
+
+
+   <!--start five part-->
+
+   <div class="container align-items-center">
+        <div class="middle-tier row">
+            <div class="col-md-12 text-center" style="height: auto;">
+               <h1 id="thirdpart" style="text-transform:uppercase;font-size: 2vw;margin-top: 60px">latest dive centers</h1>
+               <img src="images/Shape 1.png"  class="img-responsive" style="margin-top:-30px">
+               <p id="thirdpart2" >we have lovely destination to the hole world </p>
+
+              </div>
+           </div>
+        </div>
+
+    <!--end five part-->
+
+
+     <!--start 6 part-->
+     <div class="container-fluid " style="margin-top: 50px">
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6 ">
+                        <div id="circle">
+                            <img src="images/f2.png" class="img-6-part">
+                        </div>
+                        <div style="text-align:center;font-size:1vw">
+                            <h6 style="color:#194E67"><b>Bateel Diver</b> </h6>
+                           <div id=thirdpart2> <i class="fas fa-map-marker-alt" ></i> <span style="color:gray">saudi arabia</span></div>
+
+                              </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                        <div id="circle">
+                                <img src="images/f2.png" class="img-6-part">
+                            </div>
+                            <div style="text-align:center;font-size:1vw">
+                                <h6 style="color:#194E67"><b>Bateel Diver</b> </h6>
+                                <div id=thirdpart2> <i class="fas fa-map-marker-alt" ></i> <span style="color:gray">saudi arabia</span></div>
+
+                                  </div>
+
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                        <div id="circle">
+                                <img src="images/f2.png" class="img-6-part">
+                            </div>
+                            <div style="text-align:center;font-size:1vw">
+                                <h6 style="color:#194E67"><b>Bateel Diver</b> </h6>
+                                <div id=thirdpart2><i class="fas fa-map-marker-alt" ></i> <span style="color:gray">saudi arabia</span></div>
+
+                                  </div>
+
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                        <div id="circle">
+                                <img src="images/f2.png" class="img-6-part">
+                            </div>
+                            <div style="text-align:center;font-size:1vw">
+                                <h6 style="color:#194E67"><b>Bateel Diver</b> </h6>
+                                <div id=thirdpart2><i class="fas fa-map-marker-alt" ></i> <span style="color:gray">saudi arabia</span></div>
+
+                                  </div>
+
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                        <div id="circle">
+                                <img src="images/f2.png" class="img-6-part">
+                            </div>
+                            <div style="text-align:center;font-size:1vw">
+                                <h6 style="color:#194E67"><b>Bateel Diver</b> </h6>
+                                <div id=thirdpart2><i class="fas fa-map-marker-alt" ></i> <span style="color:gray">saudi arabia</span></div>
+
+                                  </div>
+
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                        <div id="circle">
+                                <img src="images/f2.png" class="img-6-part">
+                            </div>
+                            <div style="text-align:center;font-size:1vw">
+                                <h6 style="color:#194E67"><b>Bateel Diver</b> </h6>
+                                <div id=thirdpart2><i class="fas fa-map-marker-alt" ></i> <span style="color:gray">saudi arabia</span></div>
+
+                                  </div>
+
+                </div>
+
+
+         </div>
+</div>
+</div>
+
+<section class="container text-center" style="margin-top:60px; margin-bottom:60px" >
+        <div class="row" >
+            <div class="col-12" style="height: auto">
+
+                    <button type="button" class="btn btn-outline-info" style="border-bottom-right-radius: 30px;border-top-right-radius: 30px;border-bottom-left-radius: 30px;border-top-left-radius: 30px;color: black;padding: 6px">See All Destinations</button>
+            </div>
+            </div>
+        </section>
+      <!--end  6 part-->
+
+
+        <!--start  7 part-->
+
+       <section class="container-fluid" style="background-color:#E8F0F2;margin-top: 150px;direction: rtl">
+        <div class="container">
+           <div class="row">
+
+                    <div class="col-lg-4 col-md-6 col-12 text-center" >
+                            <img src="images/Capture.PNG" class="responsive" style="margin-top: -80px;width: 100% ;height: 260px">
+
+                         </div>
+
+                <div class="col-lg-3 col-md-6 col-12 text-center" style="margin-top: 30px;">
+                        <img src="images/1_OIIv4FEjJQMqh-zEPhtlYA.png" style="margin-bottom: 11px"><br>
+                       <img src="images/app-store-coupon-my-new.png" style="margin-bottom: 11px">
+                    </div>
+
+                    <div class="col-lg-4 col-12 text-center">
+                      <div style="font-size: 1vw;text-align: justify;direction: ltr" >
+                          <div id=thirdpart2><p style="margin-top: 20px;">Book your trip anytime any<br>
+                                      <span>where </span></p></div>
+                    <h2 style="color: #62CAE2"><b>Download Divhood</b></h2>
+                    <h1 style="color: #62CAE2"><b>Appication Now</b></h1>
+                      </div>
+                        </div>
+                      <div class="col-lg-1"></div>
+
+
+               </div>
+            </div>
+        </section>
+         <!--end  7part-->
+
+            <!--start  8 part-->
+
+            <section class="container-fluid" style="background-color:#0D374F;direction:rtl;color: white">
+                    <div class="container" style="padding-top: 60px;padding-right: 5%">
+                        <div class="row">
+                                <div class="col-lg-2  col-12 text-center">
+                                <h1 style="color:#5EC9E2 ">44203273802+</h1>
+                                </div>
+                                  <div class="col-lg-6">
+
+                                    </div>
+                                    <div class="col-lg-4 col-12 text-center">  
+                                      <span id="top-8-part">  For more help</span>
+                                      <img src="images/support.png"  class="responsive">
+                                     
+
+                                     </div>
+                                 </div>
+                                 <hr style="width: 100%; border-top: 1px solid #0B3147;margin-top: 15px  ">
+                    </div>
+                             
+                    <div class="container" style="padding-top: 20px;padding-right: 10%">
+                               <div class="row">
+                                    <div class="col-lg-2 col-md-6 col-12 text-center" id="gg1">
+                                            <ul id="ul-8-part">
+                                                    <li><h5 id="gg"><b>information</b></h5></li>
+                                                    <li><img src="images/Rectangle 21.png" ></li>
+                                                   <li><a href="#" class="link-part">ABOUTDIVEHOOD</a></li>
+                                                   <li><a href="#" class="link-part">Work With US</a></li>
+                                                   <li><a href="#" class="link-part">Privacy policy</a></li>
+                                                   <li><a href="#" class="link-part">Terms&Condition</a></li>
+                                                   <li><a href="#" class="link-part">PressEnqueries</a></li>
+                                                    </ul>
+                                    </div>
+                                    <div class="col-lg-2  col-md-6 col-12 text-center mx-auto" id="gg1">
+                                            <ul id="ul-8-part">
+                                                    <li><h5 id="gg"><b>resources</b></h5></li>
+                                                    <li><img src="images/Rectangle 21.png" ></li>
+                                                   <li><a href="#" class="link-part">ManageMyBooking</a></li>
+                                                   <li><a href="#" class="link-part">Trips Sitemap</a></li>
+                                                   <li><a href="#" class="link-part">Travel Tips</a></li>
+
+                                                    </ul>
+                                        </div>
+                                    <div class="col-lg-2 col-md-6 col-12  text-center" id="gg1">
+                                            <ul id="ul-8-part">
+                                                    <li><h5 id="gg"><b>divehood</b></h5></li>
+                                                    <li><img src="images/Rectangle 21.png" ></li>
+                                                   <li><a href="#" class="link-part">Contact Us</a></li>
+                                                   <li><a href="#" class="link-part">Ordering&Payment</a></li>
+                                                   <li><a href="#" class="link-part">Shipping Returns</a></li>
+                                                   <li><a href="#" class="link-part">FAQ</a></li>
+                                                   <li><a href="#" class="link-part">Sizing Quids</a></li>
+                                                    </ul>
+                                            </div>
+
+                                     <div class="col-lg-5 col-md-6 col-12 text-center">
+                                            <ul id="ul-8-part">
+
+                                                    <li><img src="images/1.png" style="margin-bottom: 25px"></li>
+                                                   <li><p id="gg1">Contact Us simply Contact Us simply Contact Us simply
+                                                    Ordering&Payment Contact Us simply Contact Us simply
+                                                    Shipping Returns Contact Us simply Contact Us simply
+                                                    Sizing Quids Contact Us simply...</p></li>
+                                                    </ul>
+                                                </div>
+                               </div>
+                             </div>
+
+
+                </section>
+
+            <!--end   8 part-->
+
+             <!--start footer-->
+       <section class="container-fluid" style="background-color:#052233;color: white">
+            <div class="container" style="padding-right:10%;direction: rtl" id="cc">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12 text-center" style="padding-top:60px ">
+                        <a href="#"> <div id="socialmedia">
+                                <i class="fab fa-linkedin-in" style="margin-top: 10px"></i>
+                            </div></a>
+                            <a href="#"><div id="socialmedia">
+                                    <i class="fab fa-instagram" style="margin-top: 10px"></i>
+
+                             </div></a>
+                             <a href="#"> <div id="socialmedia">
+                                <i class="fab fa-twitter"style="margin-top: 10px"></i>
+                                     </div></a>
+                                     <a href="#"><div id="socialmedia">
+                                    <i class="fab fa-facebook-f" style="margin-top: 10px"></i>
+                                 </div></a>
+
+                      </div>
+
+                    <div class="col-lg-6 col-md-6 col-12 text-center" style="padding-top:60px ">
+
+                        <div class="form-group">
+                                <div class="input-group">
+                                          <div class="input-group-prepend">
+                                                <span class="input-group-text" style="border-bottom-right-radius: 50%;border-top-right-radius: 50%;width: 42px;background-color: #71d0e5;border: none"><i class="fas fa-search" style="color:white;"></i></span>
+
+                                               <input type="text" class="form-control" placeholder="E-Mail address" style="background-color: #0D374F;direction:ltr;border: none;">
+
+                                             </div>
+                              </div>
+                              </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 text-center"style="padding-top:20px ">
+                        <div style="text-align: justify">
+                           <h3>ENGOY <span style="color: #5EC9E2;text-transform: uppercase">with</span></h3>
+                           <h3 style="color: #5EC9E2;text-transform: uppercase">divehoode !</h3>
+                           <p>subscribe divehoode get<br>
+                           subscribe divehoode get </p>
+                          </div>
+                       </div>
+                       
+                     
+                          
+                           
+                </div>
+
+                    </div>
+                    </section>
+                  <footer style="background-color: #0D374F;color:white;text-align: center;padding: 5px">
+                        <img src="images/love.png" align="middle">
+                      </footer>
+                 <!--end  footer-->
+             </div>
+            </div>
+   <!--start left-menu-->
+
+     <div class="d-flex flex-column left-side">
+           <div id="showmenu"><img src="images/menu.png"></a></div>
+
+            <div class="pt-5">
+            <div class="p-2 "><a href="#"><img src="images/yacht.png"></a></div>
+            <div class="p-2 pt-3"><a href="#"><img src="images/diving2.png"></a></div>
+            <div class="p-2 pt-3"><a href="#"> <img src="images/discount.png"></a> </div>
+            <div class="p-2 pt-3"> <a href="#"><img src="images/hotel.png"></a></div>
+            <div class="p-2 pt-3"><a href="#"><img src="images/diving2.png"></a></div>
+            <div class="p-2 pt-3"><a href="#"><img src="images/diving.png"></a></div>
+            <div>
+          </div>
+          <div id="showdiv" class="menudiv">
+                 <div class="itemdiv"><a href="#">Menu option 1</a></div><br>
+                 <div class="itemdiv"><a href="#">Menu option 2</a></div><br>
+                 <div class="itemdiv"><a href="#">Menu option 2</a></div><br>
+                 <div class="itemdiv"><a href="#">Menu option 2</a></div><br>
+                 <div class="itemdiv"><a href="#">Menu option 2</a></div><br>
+                 <div class="itemdiv"><a href="#">Menu option 2</a></div><br>
+                    </div>
+         <!--end left-menu-->
+
+         <script src="js/owl.carousel.min.js"></script>
+         <script>
+      
+         $('.owl-one').owlCarousel({
+             loop:true,
+             autoplay:true,
+             margin:10,  
+             responsive:{
+                 0:{
+                     items:1
+                 },
+                 600:{
+                     items:3
+                 },
+                 1000:{
+                     items:4
+                 }
+             }
+         })
+
+         $('.owl-two').owlCarousel({
+    loop:true,
+    autoplay:true,
+    margin:10,
+     responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+
+         </script>
+
+
+        
+</body>
+</html>
